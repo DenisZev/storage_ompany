@@ -1,0 +1,95 @@
+/*Menu.css*/
+body {
+    font-family: 'Rubic', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    color: #f4f4f4;
+    position: relative;
+    z-index: 1;
+}
+.address-bar {
+    display: flex;
+    align-items: center;
+}
+.address-bar img {
+    background: #111c55;
+    padding: 1em 1em 1em;
+    border-radius: 50px;
+    width: 22px;
+    border: 1px solid #233270;
+    margin-right: 25px;
+
+}
+.menu-link {
+    display: flex;
+    justify-content: center;
+    background: rgba(9, 18, 66, 0.66);
+
+}
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-around;
+    background: #091242;
+
+}
+.header-menu .logo {
+    width: 50px;
+
+}
+.header-menu h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 10px;
+    position: relative;
+}
+.menu-list li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -5px; /*Расположение линии между элементами*/
+    transform: translateY(-50%);
+    height: 10px; /*Высота линии*/
+    width: 1px; /*Ширина линии*/
+    background-color: #ffffff; /*Цвет линии*/
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #ffffff; /*темный цвет текста*/
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-list a:hover {
+    background-color: #ff8c00; /*оранжевый цвет при наведении*/
+    color: #fff; /*белый цвет текста при наведении*/
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+
+}

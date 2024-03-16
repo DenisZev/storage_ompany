@@ -1,0 +1,254 @@
+.main {
+    width: 100%;
+    height: 1100px;
+    background-image: url('/public/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -75px;
+    position: relative;
+    display: flex;
+
+}
+.left-side, .right-side {
+    flex: 1;
+}
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side .text {
+    color: #f4f4f4;
+    padding: 0.5em 0.5em 0.5em;
+    margin-left: 25%;
+
+}
+.quote {
+    background: rgba(17, 28, 85, 0.74);
+    border-left: 10px solid #ff8c00;
+    color: #f4f4f4;
+    padding-left: 5px;
+}
+.content {
+    padding: 15px;
+    background: rgba(17, 28, 85, 0.74);
+
+}
+.quote {
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+    padding-right: 5px;
+}
+.content h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+.content p {
+    font-weight: 400;
+    font-size: 18px;
+}
+.text a {
+    background-image: linear-gradient(to right, #fdbf38, #fdd67d);
+    padding: 10px;
+    color: #101010;
+    text-decoration: none;
+    display: flex;
+    margin: 0 35px 0 35px;
+    justify-content: center;
+}
+.text a:hover {
+    background-image: linear-gradient(to left, #fdbf38, #fdd67d);
+    transform: scale(1.05);
+}
+.whatwedo {
+    background: white;
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+.whatwedo .left-side, .about .left-side {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0 25px;
+    margin-left: 100px;
+}
+.whatwedo .right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.whatwedo .right-side .row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.whatwedo .right-side .col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+.whatwedo-description {
+    display: flex;
+    flex-direction: column;
+}
+.background {
+    background-image: url('/public/Background.jpg');
+    width: 100%;
+    height: 500px;
+}
+.about {
+
+    background: white;
+    position: relative;
+    top: -150px;
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding: 80px 50px 0 50px;
+    flex-direction: column;
+
+}
+.about .row, .stat {
+    display: flex;
+    width: 100%;
+}
+
+.about .right-side {
+    position: relative;
+}
+.airplane-img {
+    position: absolute;
+    z-index: 1; /*Устанавливаем самолет выше девушки*/
+    bottom: 0;
+    left: 0;
+}
+
+.woman-img {
+    position: absolute;
+    z-index: 2; /*Устанавливаем девушку поверх самолета*/
+    bottom: -5em;
+    left: -3em;
+    border: 25px solid white;
+}
+.stat {
+    display: flex;
+    margin-top: 150px;
+}
+.stat p {
+    border-left: 10px solid #ff8c00;
+    padding: 5px;
+}
+.stat .left-side, .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.transporting .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    position: relative;
+    z-index: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+.card-container .row {
+    display: flex;
+}
+.card {
+
+    position: relative;
+    width: 210px;
+    margin: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: left;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.6);
+}
+.description p {
+    color: darkorange;
+}
+.transporting .bottom {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #fdbf38, #fdd67d);
+}
+.bottom a {
+    background: rgba(9,18,66,1);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+.testimonials {
+    width: 75%;
+    margin: 0 auto;
+}
+.testimonials .row {
+    display: flex;
+    flex-direction: row;
+}
+.testimonials .left-side {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-tes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.card-tes .card {
+    background: #111c55;
+    padding: 15px;
+    width: 60%;
+}
+.card .user {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+}
+.user p {
+    margin: 0;
+}
+.card-tes img {
+    margin-right: 10px;
+    width: 75px;
+}
+.card-tes .text {
+    color: white;
+    padding: 10px;
+
+}
